@@ -1,0 +1,47 @@
+﻿@model Silverstone.Weather.Models.LocationCurrentWeather
+
+@{
+    ViewBag.Title = "Current Weather";
+}
+
+<div class="row">
+    <h2 class="text-center"><strong>@ViewBag.Title</strong></h2>
+</div>
+
+<div class="row field-validation-error text-center">
+    @if (!string.IsNullOrWhiteSpace(Model.ErrorResult))
+    {
+        <p class="alert-danger"><strong>Error:</strong> @Model.ErrorResult </p>
+    }
+</div>
+
+<div class="row text-center">
+    @using (Html.BeginForm("Index", "CurrentWeather", FormMethod.Post))
+    {
+        @Html.TextBoxFor(l => l.Location, new { placeholder = "Search Location..." })
+        <button id="submit-location" type="submit">Search</button>
+    }
+</div>
+@if (Model.WeatherInfo != null)
+{
+    <div class="weather-result-block row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <div class="col-md-7 text-center">
+                <h4>City: @Model.WeatherInfo.LocationName</h4>
+                <img src="@Model.WeatherInfo.IconSrc" alt="@Model.WeatherInfo.IconSrc" />
+                <p>@Model.WeatherInfo.Temp @Model.WeatherInfo.TempUnit</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <table>
+                <tr><td><h4>Max Temp: </h4></td> <td class="text-center"><h5>@Model.WeatherInfo.TempMax @Model.WeatherInfo.TempUnit</h5></td></tr>
+                <tr><td><h4>Min Temp: </h4></td> <td class="text-center"><h5>@Model.WeatherInfo.TempMin @Model.WeatherInfo.TempUnit</h5></td></tr>
+                <tr><td><h4>Humidity: </h4></td> <td class="text-center"><h5>@Model.WeatherInfo.Humidity%</h5></td></tr>
+                <tr><td><h4>Sunrise: </h4></td> <td class="text-center"><h5>@Model.WeatherInfo.Sunrise.LocalDateTime</h5></td></tr>
+                <tr><td><h4>Sunset: </h4></td> <td class="text-center"><h5>@Model.WeatherInfo.Sunset.LocalDateTime</h5></td></tr>
+            </table>
+        </div>
+    </div>
+}
+

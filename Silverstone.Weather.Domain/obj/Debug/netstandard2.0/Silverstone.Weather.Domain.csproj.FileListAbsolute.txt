@@ -1,0 +1,10 @@
+A:\WIP\VS Projects\Silverstone.Weather\Silverstone.Weather.Domain\bin\Debug\netstandard2.0\Silverstone.Weather.Domain.deps.json
+A:\WIP\VS Projects\Silverstone.Weather\Silverstone.Weather.Domain\bin\Debug\netstandard2.0\Silverstone.Weather.Domain.dll
+A:\WIP\VS Projects\Silverstone.Weather\Silverstone.Weather.Domain\bin\Debug\netstandard2.0\Silverstone.Weather.Domain.pdb
+A:\WIP\VS Projects\Silverstone.Weather\Silverstone.Weather.Domain\obj\Debug\netstandard2.0\Silverstone.Weather.Domain.AssemblyInfoInputs.cache
+A:\WIP\VS Projects\Silverstone.Weather\Silverstone.Weather.Domain\obj\Debug\netstandard2.0\Silverstone.Weather.Domain.AssemblyInfo.cs
+A:\WIP\VS Projects\Silverstone.Weather\Silverstone.Weather.Domain\obj\Debug\netstandard2.0\Silverstone.Weather.Domain.dll
+A:\WIP\VS Projects\Silverstone.Weather\Silverstone.Weather.Domain\obj\Debug\netstandard2.0\Silverstone.Weather.Domain.pdb
+A:\WIP\VS Projects\Silverstone.Weather\Silverstone.Weather.Domain\obj\Debug\netstandard2.0\Silverstone.Weather.Domain.csproj.AssemblyReference.cache
+A:\WIP\VS Projects\Silverstone.Weather\Silverstone.Weather.Domain\obj\Debug\netstandard2.0\Silverstone.Weather.Domain.GeneratedMSBuildEditorConfig.editorconfig
+A:\WIP\VS Projects\Silverstone.Weather\Silverstone.Weather.Domain\obj\Debug\netstandard2.0\Silverstone.Weather.Domain.csproj.CoreCompileInputs.cache
